@@ -1,0 +1,180 @@
+vanilla    100000 [10,10] 0.567 [4.739,4.089] 0.219
+extended   100000 [10,10] 0.205 [6.069,7.943] 0.283
+lessVar    100000 [10,10] 0.230 [2.969,4.339] 0.154
+maxBag     100000 [10,10] 0.329 [6.304,5.638] 0.281
+
+   vanilla x3 atkWin
+o.                  
+.x..                
+ .xo.               
+  .xo..             
+   .xo..            
+   ..xoo..          
+    ..xoo..         
+     ..xxo...       
+      ..xxo...      
+       ..xxoo..     
+        ..xxoo...   
+         ..xxoo...  
+          ...xxo....
+           ...xxoo..
+            ...xxoo.
+             ...xxoo
+              ...xxo
+               ...xx
+                ...x
+                 ...
+
+   vanilla x3 stdDevRatio
+Oo:.                
+ooo::.              
+:ooo::..            
+.::o::::..          
+ .:::::::...        
+  .:::::::...       
+  ..:::::::...      
+   ..:::::::....    
+    ..:::::::....   
+     ...::::::....  
+      ...::::::.... 
+       ....::::.....
+        ....::::....
+         .....:::...
+          ..........
+           .........
+            ........
+             .......
+              ......
+               .....
+
+  extended x3 atkWin
+o                   
+..                  
+ ..                 
+  x.                
+  .x.               
+   .x.              
+    .o.             
+     .o.            
+     .xo.           
+      .xo           
+       .x.          
+        .x.         
+        ..o.        
+         .xo.       
+          .xo.      
+           .xo.     
+           ..xo.    
+            ..xo.   
+             .xo..  
+              .xo.. 
+
+  extended x3 stdDevRatio
+O.                  
+oO:                 
+.Oo:                
+ :Oo:               
+  oOo:              
+  :oOo:             
+   :oOo:            
+   .:OOo:.          
+    :oOOo:          
+    .:oOO::         
+     .:oOO:.        
+      .:oOo:..      
+       :ooOo:.      
+       .:oOOo:.     
+        .:oOOo:.    
+         ::oOOo:.   
+         .:ooOOo:.  
+          .:ooOoo:. 
+          ..:oOOoo:.
+           .::oOOoo:
+
+   lessVar x3 atkWin
+o                   
+..                  
+.x.                 
+ .o.                
+  xo.               
+  .xo.              
+   .x..             
+   .xo..            
+    .xo..           
+    ..xo.           
+     .xoo.          
+     ..xo..         
+      ..xo..        
+       .xxo..       
+       ..xoo..      
+        ..xo..      
+         .xxo..     
+         ..xoo..    
+          ..xoo..   
+          ..xxo...  
+
+   lessVar x3 stdDevRatio
+o:.                 
+oo:.                
+:o::.               
+::::..              
+.::::..             
+ .::::.             
+ .::::..            
+  .::::..           
+  ..:::...          
+   ..:::...         
+   ...::...         
+    ...::...        
+    ....:....       
+     .........      
+      ........      
+      .........     
+       .........    
+        ........    
+        .........   
+         .........  
+
+    maxBag x3 atkWin
+o                   
+...                 
+ .o.                
+  xo.               
+   .o..             
+   .xo.             
+    .xx..           
+     .xoo.          
+      .xx..         
+      ..xoo..       
+        .xx..       
+        ..xoo..     
+         ..xx..     
+          .xxoo..   
+           ..xo...  
+            .xxoo.. 
+             ..xoo..
+             ..xxoo.
+               ..xxo
+               ..xxo
+
+    maxBag x3 stdDevRatio
+O                   
+Ooo                 
+ oOo:               
+ :Ooo:.             
+  :oooo.            
+  .oOoo::           
+   .ooooo:.         
+    :oooo::..       
+     :ooooo::       
+     ::ooooo::.     
+      .:ooooo::.    
+      .:ooooooo:.   
+       .::ooooo::.. 
+        .:ooooooo::.
+         .:oooooo:::
+         .::ooooooo:
+           .:oooooo:
+           .::oooooo
+            .::ooooo
+            .::ooooo
