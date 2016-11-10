@@ -1,180 +1,122 @@
-vanilla    100000 [10,10] 0.567 [4.739,4.089] 0.219
-extended   100000 [10,10] 0.205 [6.069,7.943] 0.283
-lessVar    100000 [10,10] 0.230 [2.969,4.339] 0.154
-maxBag     100000 [10,10] 0.329 [6.304,5.638] 0.281
+Samples:
+vanilla    100000 [10,10] 0.565 [4.756,4.084] sdr0.219 srv0.223 kdr1.335
+extended   100000 [10,10] 0.209 [6.067,7.938] sdr0.285 srv0.377 kdr0.694
+lessVar    100000 [10,10] 0.230 [2.952,4.323] sdr0.153 srv0.200 kdr0.764
+maxBag     100000 [10,10] 0.329 [6.309,5.636] sdr0.281 srv0.293 kdr1.185
+annihilate 100000 [11,10] 1.000 [1.000,0.000] sdr0.000 srv0.048 kdr1.000
 
-   vanilla x3 atkWin
-o.                  
-.x..                
- .xo.               
-  .xo..             
-   .xo..            
-   ..xoo..          
-    ..xoo..         
-     ..xxo...       
-      ..xxo...      
-       ..xxoo..     
-        ..xxoo...   
-         ..xxoo...  
-          ...xxo....
-           ...xxoo..
-            ...xxoo.
-             ...xxoo
-              ...xxo
-               ...xx
-                ...x
-                 ...
+KEY:
+ 1. atkWin
+ 2. stdDevRatio = (resAtk + resDef) * Math.sqrt((1 - atkWin) * atkWin) / (initAtk + initDef)
+ 3. survivability = resAtk * atkWin / (initAtk + initDef) + resDef * (1 - atkWin) / (initAtk + initDef)
+ 4. kdr = initDef / (initAtk - resAtk) * atkWin + (initDef - resDef) / initAtk * (1 - atkWin)
 
-   vanilla x3 stdDevRatio
-Oo:.                
-ooo::.              
-:ooo::..            
-.::o::::..          
- .:::::::...        
-  .:::::::...       
-  ..:::::::...      
-   ..:::::::....    
-    ..:::::::....   
-     ...::::::....  
-      ...::::::.... 
-       ....::::.....
-        ....::::....
-         .....:::...
-          ..........
-           .........
-            ........
-             .......
-              ......
-               .....
+vanilla    x3
+ |o.   OOOOOOOOOOOOOOO|    |Oo:.                |    |:oO@@@@@@@@@@@@@@@@@|    |Xx   ............o..|
+ |.x..    OOOOOOOOOOOO|    |ooo::..             |    |o..:oOO@@@@@@@@@@@@@|    |xxx,                |
+ | .xo.    OOOOOOOOOOO|    |:ooo::..            |    |O:...::ooOOO@@@@@@@@|    |xxxx,,              |
+ |  .xo..    OOOOOOOOO|    |.::::::...          |    |@o.....::oooOOOOO@@@|    |xxxxx,,, ,          |
+ |   .xo...      OOOOO|    |..:::::::..         |    |@o:.   ..:::ooooOOOO|    |x,,x,,,,,,    ,, , ,|
+ |X  ..xo...     OOOOO|    |  .:::::::...       |    |@O:..    ..::::ooooO|    |xxx,x,,,,,,,,,, ,  ,|
+ |X   ..xxo..      OOO|    |   .:::::::....     |    |@Oo:.     ....:::ooo|    |xx,,,,x,,,,,,,,,,  ,|
+ |XX   ..xxo...      O|    |   ..:::::::...     |    |@@o:..      ....::::|    |x,,,,,,,,,,,,,,,,,,,|
+ |XXX   ..xxo...      |    |    ..:::::::...    |    |@@Oo:..       ....::|    |xx,,,,,,,,,,,,,,,,,,|
+ |XXX    ..xxoo...    |    |     ...::::::...   |    |@@Oo::.         ....|    |x,,,,,,,,,,,,,,,,,,,|
+ |XX XX   ..xxoo...   |    |     ....::::::.... |    |@@@Oo:..         ...|    |,x,,,,,,,,,,,,,,,,,,|
+ |XXXXXX   ..xxoo...  |    |        ...::::.....|    |@@@Oo::..          .|    |x,,,,,,,,,,,,,,,,,,,|
+ |XXXXXX    ...xoo....|    |        ....:::::...|    |@@@Ooo::..          |    |x,,,,,,,,,,,,,,,,,,,|
+ |XXXXXX     ...xxo...|    |         .....::....|    |@@@OOo::..          |    |x,,,,,,,,,,,,,,,,,,,|
+ |XXXXXXXX    ...xooo.|    |          ......:...|    |@@@@Ooo::..         |    |x,,,,,,,,,,,,,,,,,,,|
+ |XXXXXXXX     ...xxoo|    |            ........|    |@@@@Ooo::...        |    |x,,,,,,,,,,,,,,,,,,,|
+ |XXXXXXXX      ...xxo|    |            ........|    |@@@@OOoo::...       |    |x,,,,,,,,,,,,,,,,,,,|
+ |XXXXXXXXX      ...xx|    |             .......|    |@@@@@Ooo:::..       |    |x,,,,,,,,,,,,,,,,,,,|
+ |XXXXXXXXXX      ...x|    |              ......|    |@@@@@OOoo::...      |    |x,,,,,,,,,,,,,,,,,,,|
+ |XXXXXXXXXXX      ...|    |                ....|    |@@@@@OOoo:::...     |    |x,,,,,,,,,,,,,,,,,,,|
 
-  extended x3 atkWin
-o                   
-..                  
- ..                 
-  x.                
-  .x.               
-   .x.              
-    .o.             
-     .o.            
-     .xo.           
-      .xo           
-       .x.          
-        .x.         
-        ..o.        
-         .xo.       
-          .xo.      
-           .xo.     
-           ..xo.    
-            ..xo.   
-             .xo..  
-              .xo.. 
+extended   x3
+ |o OOOOOOOOOOOOOOOOOO|    |O.                  |    |:@@@@@@@@@@@@@@@@@@@|    |xO%%%%%%%%%%%%%%%%%%|
+ |.. OOOOOOOOOOOOOOOOO|    |oO:                 |    |O:O@@@@@@@@@@@@@@@@@|    |X.O%%%%%%%%%%%%%%%%%|
+ | .. OOOOOOOOOOOOOOOO|    |.Oo.                |    |@o:OO@@@@@@@@@@@@@@@|    |XXo%%%%%%%%%%%%%%%%%|
+ |X x.  OOOOOOOOOOOOOO|    | :Oo:               |    |@O::oO@@@@@@@@@@@@@@|    |XXxoO%%%%%%%%%%%%%%%|
+ |X  x.  OOOOOOOOOOOOO|    | .oOo:              |    |@@o::oOO@@@@@@@@@@@@|    |XXXxo%%%%%%%%%%%%%%%|
+ |XX .o.  OOOOOOOOOOOO|    |  .oOo:             |    |@@Oo::oOO@@@@@@@@@@@|    |XXXXxO%%%%%%%%%%%%%%|
+ |XX  .o.  OOOOOOOOOOO|    |  .:oOo:            |    |@@@o:::oOOO@@@@@@@@@|    |XXXXX,O%%%%%%%%%%%%%|
+ |XXX  .o.  OOOOOOOOOO|    |   .:OOo:           |    |@@@Oo:::oOOO@@@@@@@@|    |XXXXXx O%%%%%%%%%%%%|
+ |XXXX .xo.   OOOOOOOO|    |    .oOOo..         |    |@@@@Oo::ooOOOO@@@@@@|    |XXXXXXx O%%%%%%%%%%%|
+ |XXXX  .x.. OOOOOOOOO|    |     :oOOo:         |    |@@@@Oo:::ooOOOO@@@@@|    |XXXXXXXx.O%%%%%%%%%%|
+ |XXXXX  .x.  O OOOOOO|    |     .:oOO::        |    |@@@@@Oo:::ooOOOO@@@@|    |XXXXXXXXxoO%%%%%%%%%|
+ |XXXXX   .x.    OOOOO|    |      ::oOo:.       |    |@@@@@OOo:::ooOOOOO@@|    |XXXXXXXXxxoO%%%%%%%%|
+ |XXXXXX  ..o.   OOOOO|    |      .:oOOo::.     |    |@@@@@OOoo:::oooOOOO@|    |&XXXXXXXXx,oO%%%%%%%|
+ |XXXXXX   .xo.   OOOO|    |       .:oOOo:..    |    |@@@@@@OOo::::oooOOOO|    |&&XXXXXXXXx,oO%%%%%%|
+ |XXXXXXX   .xo.   OOO|    |        .:oOOo:..   |    |@@@@@@OOoo::::oooOOO|    |&XXXXXXXXXXx OO%%%%%|
+ |XXXXXXX    .xo.   OO|    |        .::oOOo:.   |    |@@@@@@@OOoo::::oooOO|    |XXXXXXXXXXXxx oO%%%%|
+ |XXXXXXXX   ..xo.   O|    |         .:ooOOo:.  |    |@@@@@@@OOOoo::::oooO|    |X&XXXXXXXXXXxx.OO%%%|
+ |XXXXXXXXX   ..x..   |    |         ..:oOOoo:..|    |@@@@@@@@OOoo:::::ooo|    |X&XXXXXXXXXXXxxoOO%%|
+ |XXXXXXXXXX   ..o..  |    |          ..:ooOoo:.|    |@@@@@@@@OOOoo:::::oo|    |&&XXXXXXXXXXXXx,oOO%|
+ |XXXXXXXXXX    .xo.. |    |            ::oOOoo:|    |@@@@@@@@@OOooo:::::o|    |&X&XXXXXXXXXXXxx,oOO|
 
-  extended x3 stdDevRatio
-O.                  
-oO:                 
-.Oo:                
- :Oo:               
-  oOo:              
-  :oOo:             
-   :oOo:            
-   .:OOo:.          
-    :oOOo:          
-    .:oOO::         
-     .:oOO:.        
-      .:oOo:..      
-       :ooOo:.      
-       .:oOOo:.     
-        .:oOOo:.    
-         ::oOOo:.   
-         .:ooOOo:.  
-          .:ooOoo:. 
-          ..:oOOoo:.
-           .::oOOoo:
+lessVar    x3
+ |o   OOOOOOOOOOOOOOOO|    |o:                  |    |:oO@@@@@@@@@@@@@@@@@|    | .oooooooooooooooooo|
+ |..   OOOOOOOOOOOOOOO|    |oo:.                |    |:.:oOO@@@@@@@@@@@@@@|    | ooooooooooooooooooo|
+ | x.   OOOOOOOOOOOOOO|    |:o::.               |    |o...:ooOO@@@@@@@@@@@|    |..oooooooooooooooooo|
+ | .o.   OOOOOOOOOOOOO|    |::::..              |    |O.  .::ooOOOO@@@@@@@|    |oooooooooooooooooooo|
+ | .xo.   OOOOOOOOOOOO|    |.::::.              |    |O:   ..::oooOOOO@@@@|    |oooooooooooooooooooo|
+ |X .xo.   OOOOOOOOOOO|    | ::::...            |    |@o.   ..:::oooOOOOO@|    |oooooooooooooooooooo|
+ |X  .x..    OOOOOOOOO|    | .::::..            |    |@o.    ...::oooooOOO|    |oooooooooooooooooooo|
+ |X  .xo..    OOOOOOOO|    | ..::::..           |    |@O:.    ...:::oooooO|    |oooooooooooooooooooo|
+ |XX  .xo..    OOOOOOO|    |   .:::...          |    |@Oo.      ...:::oooo|    |oooooooooooooooooooo|
+ |XX  ..xo..   OO OOOO|    |   .:::....         |    |@Oo:.      ...::::oo|    |oooooooooooooooooooo|
+ |XXX  .xoo.     OOOOO|    |   ...::....        |    |@@o:.       ...:::::|    |oooooooooooooooooooo|
+ |XXX  ..xo..     OOOO|    |    ..:.:...        |    |@@O::.       ....:::|    |oooooooooooooooooooo|
+ |XXX   .xxo..     OOO|    |    ...:.....       |    |@@Oo:.        ....::|    |oooooooooooooooooooo|
+ |XXXX   .xxo..     OO|    |     .........      |    |@@Oo:..        .....|    |oooooooooooooooooooo|
+ |XXXX   ..xoo..      |    |      ........      |    |@@Ooo:.         ....|    |oooooooooooooooooooo|
+ |XXXX    ..xo...     |    |      .........     |    |@@@Oo:..          ..|    |oooooooooooooooooooo|
+ |XXXXXX   .xxo..     |    |       .........    |    |@@@Oo:..           .|    |oooooooooooooooooooo|
+ |XXXXX    ..xoo..    |    |        ........    |    |@@@Ooo:..           |    |oooooooooooooooooooo|
+ |XXXXX     ..xoo..   |    |         ........   |    |@@@Ooo:..           |    |oooooooooooooooooooo|
+ |XXXXXX    ..xxo...  |    |         .........  |    |@@@OOo::..          |    |oooooooooooooooooooo|
 
-   lessVar x3 atkWin
-o                   
-..                  
-.x.                 
- .o.                
-  xo.               
-  .xo.              
-   .x..             
-   .xo..            
-    .xo..           
-    ..xo.           
-     .xoo.          
-     ..xo..         
-      ..xo..        
-       .xxo..       
-       ..xoo..      
-        ..xo..      
-         .xxo..     
-         ..xoo..    
-          ..xoo..   
-          ..xxo...  
+maxBag     x3
+ |oOOOOOOOOOOOOOOOOOOO|    |O                   |    |:oO@@@@@@@@@@@@@@@@@|    |xooo.....           |
+ |...OOOOOOOOOOOOOOOOO|    |Ooo                 |    |o::oOO@@@@@@@@@@@@@@|    |x,Xoooo...........  |
+ |X.o. OOOOOOOOOOOOOOO|    | oOo:               |    |O::::ooOOO@@@@@@@@@@|    |xxxxxoooooo.........|
+ |X xo.  OOOOOOOOOOOOO|    | :Ooo:.             |    |@o:.::oooOOOO@@@@@@@|    |,xx,x .oooooooo.....|
+ |XX .x.. OOOOOOOOOOOO|    |  :oooo.            |    |@O::.:::ooooOOOOO@@@|    |,xxxx ,oooooooooooo.|
+ |XX .xoo   OOOOOOOOOO|    |  .oOoo::.          |    |@Oo::.::::ooooOOOOOO|    |,xxxx,x. ooooooooooo|
+ |XXX .xx..  OOOOOOOOO|    |   .ooooo:.         |    |@@oo::..::::ooooOOOO|    |,xxxxxx, ooooooooooo|
+ |XXXX .xoo.   OOOOOOO|    |    :oooo::.        |    |@@Oo::...::::ooooooO|    |,,xxxxx,x. ooooooooo|
+ |XXXX  .xx..   OOOOOO|    |     :ooooo::.      |    |@@Ooo::...:::::ooooo|    |,,xxxxxxx  ooooooooo|
+ |XXXXX ..xoo..   OOOO|    |     .oooooo::.     |    |@@OOo:::...::::::ooo|    | ,xxxxxxx,x  ooooooo|
+ |XXXXXX  .xx..     OO|    |      .:ooooo::..   |    |@@@Ooo:::...::::::oo|    | ,xxxxxxxxx  ..ooooo|
+ |XXXXXX  ..xoo..    O|    |      .:ooooooo:.   |    |@@@Ooo::::....::::::|    | ,xxxxxxxxx,,  ooooo|
+ |XXXXXXXX ..xx...    |    |        ::ooooo::.. |    |@@@OOoo::::....:::::|    | ,,xxxxxxxxxx  ..ooo|
+ |XXXXXXX   ..xoo..   |    |        .:ooooooo:: |    |@@@@Oooo:::.....::::|    | ,,xxxxxxxxxx,,  ooo|
+ |XXXXXXXX   ..xx...  |    |         .:oooooo:::|    |@@@@OOoo::::.....:::|    | ,,xxxxxxxxxxxx ,..o|
+ |XXXXXXXXX  ..xxoo.. |    |         .::ooooooo:|    |@@@@OOooo::::......:|    | ,,,xxxxxxxxxxx,,  o|
+ |XXXXXXXXXX   ..xoo..|    |           .:oooooo:|    |@@@@OOOoo:::::......|    | ,,,xxxxxxxxxxxxx, .|
+ |XXXXXXXXXX   ..xxoo.|    |           .::oooooo|    |@@@@@OOooo:::::.....|    |  ,,xxxxxxxxxxxxx,, |
+ |XXXXXXXXXXXX   ..xoo|    |            .::ooooo|    |@@@@@OOoooo::::.....|    |  ,,xxxxxxxxxxxxxxx |
+ |XXXXXXXXXXX    ..xxo|    |             :::oooo|    |@@@@@OOOooo:::::....|    |  ,,,xxxxxxxxxxxxxx,|
 
-   lessVar x3 stdDevRatio
-o:.                 
-oo:.                
-:o::.               
-::::..              
-.::::..             
- .::::.             
- .::::..            
-  .::::..           
-  ..:::...          
-   ..:::...         
-   ...::...         
-    ...::...        
-    ....:....       
-     .........      
-      ........      
-      .........     
-       .........    
-        ........    
-        .........   
-         .........  
-
-    maxBag x3 atkWin
-o                   
-...                 
- .o.                
-  xo.               
-   .o..             
-   .xo.             
-    .xx..           
-     .xoo.          
-      .xx..         
-      ..xoo..       
-        .xx..       
-        ..xoo..     
-         ..xx..     
-          .xxoo..   
-           ..xo...  
-            .xxoo.. 
-             ..xoo..
-             ..xxoo.
-               ..xxo
-               ..xxo
-
-    maxBag x3 stdDevRatio
-O                   
-Ooo                 
- oOo:               
- :Ooo:.             
-  :oooo.            
-  .oOoo::           
-   .ooooo:.         
-    :oooo::..       
-     :ooooo::       
-     ::ooooo::.     
-      .:ooooo::.    
-      .:ooooooo:.   
-       .::ooooo::.. 
-        .:ooooooo::.
-         .:oooooo:::
-         .::ooooooo:
-           .:oooooo:
-           .::oooooo
-            .::ooooo
-            .::ooooo
+annihilate x3
+ |OOOOOOOOOOOOOOOOOOOO|    |                    |    | :O@@@@@@@@@@@@@@@@@|    |                    |
+ |XOOOOOOOOOOOOOOOOOOO|    |                    |    |: .:oOO@@@@@@@@@@@@@|    |                    |
+ |XXOOOOOOOOOOOOOOOOOO|    |                    |    |O.  .:ooOOO@@@@@@@@@|    |                    |
+ |XXXOOOOOOOOOOOOOOOOO|    |                    |    |@:   ..::ooOOOO@@@@@|    |                    |
+ |XXXXOOOOOOOOOOOOOOOO|    |                    |    |@o.    ..::oooOOOOO@|    |                    |
+ |XXXXXOOOOOOOOOOOOOOO|    |                    |    |@O:.    ...::ooooOOO|    |                    |
+ |XXXXXXOOOOOOOOOOOOOO|    |                    |    |@Oo.      ..::::oooo|    |                    |
+ |XXXXXXXOOOOOOOOOOOOO|    |                    |    |@@o:.      ...::::oo|    |                    |
+ |XXXXXXXXOOOOOOOOOOOO|    |                    |    |@@O:..       ...::::|    |                    |
+ |XXXXXXXXXOOOOOOOOOOO|    |                    |    |@@Oo:.        ....::|    |                    |
+ |XXXXXXXXXXOOOOOOOOOO|    |                    |    |@@Oo:..         ....|    |                    |
+ |XXXXXXXXXXXOOOOOOOOO|    |                    |    |@@@Oo:..         ...|    |                    |
+ |XXXXXXXXXXXXOOOOOOOO|    |                    |    |@@@Oo::.           .|    |                    |
+ |XXXXXXXXXXXXXOOOOOOO|    |                    |    |@@@Ooo:..           |    |                    |
+ |XXXXXXXXXXXXXXOOOOOO|    |                    |    |@@@OOo::..          |    |                    |
+ |XXXXXXXXXXXXXXXOOOOO|    |                    |    |@@@@Oo::..          |    |                    |
+ |XXXXXXXXXXXXXXXXOOOO|    |                    |    |@@@@Ooo::..         |    |                    |
+ |XXXXXXXXXXXXXXXXXOOO|    |                    |    |@@@@OOo::...        |    |                    |
+ |XXXXXXXXXXXXXXXXXXOO|    |                    |    |@@@@OOoo::..        |    |                    |
+ |XXXXXXXXXXXXXXXXXXXO|    |                    |    |@@@@@Ooo::...       |    |                    |
