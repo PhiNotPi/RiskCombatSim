@@ -1,8 +1,8 @@
 Samples:
-vanilla    100000 [10,10] 0.565 [4.756,4.084] sdr0.219 srv0.223 kdr1.335
-extended   100000 [10,10] 0.209 [6.067,7.938] sdr0.285 srv0.377 kdr0.694
-lessVar    100000 [10,10] 0.230 [2.952,4.323] sdr0.153 srv0.200 kdr0.764
-maxBag     100000 [10,10] 0.329 [6.309,5.636] sdr0.281 srv0.293 kdr1.185
+vanilla    100000 [10,10] 0.569 [4.742,4.074] sdr0.218 srv0.223 kdr1.338
+extended   100000 [10,10] 0.206 [6.074,7.923] sdr0.283 srv0.377 kdr0.690
+lessVar    100000 [10,10] 0.230 [2.982,4.332] sdr0.154 srv0.201 kdr0.764
+maxBag     100000 [10,10] 0.328 [6.309,5.637] sdr0.281 srv0.293 kdr1.183
 annihilate 100000 [11,10] 1.000 [1.000,0.000] sdr0.000 srv0.048 kdr1.000
 
 KEY:
@@ -12,92 +12,92 @@ KEY:
  4. kdr = initDef / (initAtk - resAtk) * atkWin + (initDef - resDef) / initAtk * (1 - atkWin)
 
 vanilla    x3
- |o.   OOOOOOOOOOOOOOO|    |Oo:.                |    |:oO@@@@@@@@@@@@@@@@@|    |Xx   ............o..|
- |.x..    OOOOOOOOOOOO|    |ooo::..             |    |o..:oOO@@@@@@@@@@@@@|    |xxx,                |
- | .xo.    OOOOOOOOOOO|    |:ooo::..            |    |O:...::ooOOO@@@@@@@@|    |xxxx,,              |
- |  .xo..    OOOOOOOOO|    |.::::::...          |    |@o.....::oooOOOOO@@@|    |xxxxx,,, ,          |
- |   .xo...      OOOOO|    |..:::::::..         |    |@o:.   ..:::ooooOOOO|    |x,,x,,,,,,    ,, , ,|
- |X  ..xo...     OOOOO|    |  .:::::::...       |    |@O:..    ..::::ooooO|    |xxx,x,,,,,,,,,, ,  ,|
- |X   ..xxo..      OOO|    |   .:::::::....     |    |@Oo:.     ....:::ooo|    |xx,,,,x,,,,,,,,,,  ,|
- |XX   ..xxo...      O|    |   ..:::::::...     |    |@@o:..      ....::::|    |x,,,,,,,,,,,,,,,,,,,|
- |XXX   ..xxo...      |    |    ..:::::::...    |    |@@Oo:..       ....::|    |xx,,,,,,,,,,,,,,,,,,|
- |XXX    ..xxoo...    |    |     ...::::::...   |    |@@Oo::.         ....|    |x,,,,,,,,,,,,,,,,,,,|
- |XX XX   ..xxoo...   |    |     ....::::::.... |    |@@@Oo:..         ...|    |,x,,,,,,,,,,,,,,,,,,|
- |XXXXXX   ..xxoo...  |    |        ...::::.....|    |@@@Oo::..          .|    |x,,,,,,,,,,,,,,,,,,,|
- |XXXXXX    ...xoo....|    |        ....:::::...|    |@@@Ooo::..          |    |x,,,,,,,,,,,,,,,,,,,|
- |XXXXXX     ...xxo...|    |         .....::....|    |@@@OOo::..          |    |x,,,,,,,,,,,,,,,,,,,|
- |XXXXXXXX    ...xooo.|    |          ......:...|    |@@@@Ooo::..         |    |x,,,,,,,,,,,,,,,,,,,|
- |XXXXXXXX     ...xxoo|    |            ........|    |@@@@Ooo::...        |    |x,,,,,,,,,,,,,,,,,,,|
+ |o.   OOOOOOOOOOOOOOO|    |Oo:.                |    |:oO@@@@@@@@@@@@@@@@@|    |Xx  ................|
+ |.x..    OOOOOOOOOOOO|    |ooo::.              |    |o..:oOO@@@@@@@@@@@@@|    |xxx,                |
+ | .xo.     OOOOOOOOOO|    |:ooo::..            |    |O:...::ooOOO@@@@@@@@|    |xxxx,,              |
+ |  .xo..     OOOOOOOO|    |.:::::::..          |    |@o.. ..::oooOOOO@@@@|    |xxxxx,,,            |
+ |   .xo..      OOOOOO|    | .:::::::..         |    |@o:.   ..:::oooOOOOO|    |xxxxx,,,,,,         |
+ |X  ..xoo..      OOOO|    |  .:::::::...       |    |@O:..    ..::::ooooO|    |x,,xx,,,,,,,,,,,  , |
+ |X   ..xoo..       OO|    |  ..:::::::...      |    |@Oo:.      ...:::ooo|    |x,,,,,,,,,,,,,,,,,,,|
+ |XX   ..xxo...       |    |   ..:::::::....    |    |@@O:..      ....::::|    |x,,,,,,,,,,,,,,,,,,,|
+ |XX    ..xxo...      |    |    ..:::::::....   |    |@@Oo:..       ....::|    |x,,,,,,,,,,,,,,,,,,,|
+ |XXX    ..xxoo..     |    |     ...::::::....  |    |@@Oo::.         ....|    |x,,,,,,,,,,,,,,,,,,,|
+ |XXXX    ..xxoo...   |    |      ...::::::.... |    |@@@Oo:..          ..|    |x,,,,,,,,,,,,,,,,,,,|
+ |XXXXX    ...xoo...  |    |       ...:::::.....|    |@@@Oo::..          .|    |x,,,,,,,,,,,,,,,,,,,|
+ |XXXXX     ...xoo....|    |        ....::::....|    |@@@Ooo:...          |    |x,,,,,,,,,,,,,,,,,,,|
+ |XXXXXX     ...xxoo..|    |         .....::....|    |@@@OOo::..          |    |x,,,,,,,,,,,,,,,,,,,|
+ |XXXXXXX     ...xxoo.|    |          ..........|    |@@@@Ooo::..         |    |x,,,,,,,,,,,,,,,,,,,|
+ |XXXXXXXX     ...xxoo|    |           .........|    |@@@@Ooo::...        |    |x,,,,,,,,,,,,,,,,,,,|
  |XXXXXXXX      ...xxo|    |            ........|    |@@@@OOoo::...       |    |x,,,,,,,,,,,,,,,,,,,|
  |XXXXXXXXX      ...xx|    |             .......|    |@@@@@Ooo:::..       |    |x,,,,,,,,,,,,,,,,,,,|
  |XXXXXXXXXX      ...x|    |              ......|    |@@@@@OOoo::...      |    |x,,,,,,,,,,,,,,,,,,,|
- |XXXXXXXXXXX      ...|    |                ....|    |@@@@@OOoo:::...     |    |x,,,,,,,,,,,,,,,,,,,|
+ |XXXXXXXXXX       ...|    |               .....|    |@@@@@OOoo:::...     |    |x,,,,,,,,,,,,,,,,,,,|
 
 extended   x3
  |o OOOOOOOOOOOOOOOOOO|    |O.                  |    |:@@@@@@@@@@@@@@@@@@@|    |xO%%%%%%%%%%%%%%%%%%|
- |.. OOOOOOOOOOOOOOOOO|    |oO:                 |    |O:O@@@@@@@@@@@@@@@@@|    |X.O%%%%%%%%%%%%%%%%%|
- | .. OOOOOOOOOOOOOOOO|    |.Oo.                |    |@o:OO@@@@@@@@@@@@@@@|    |XXo%%%%%%%%%%%%%%%%%|
+ |.. OOOOOOOOOOOOOOOOO|    |oO:                 |    |O:O@@@@@@@@@@@@@@@@@|    |X O%%%%%%%%%%%%%%%%%|
+ | ..  OOOOOOOOOOOOOOO|    |.Oo:                |    |@o:OO@@@@@@@@@@@@@@@|    |XXoO%%%%%%%%%%%%%%%%|
  |X x.  OOOOOOOOOOOOOO|    | :Oo:               |    |@O::oO@@@@@@@@@@@@@@|    |XXxoO%%%%%%%%%%%%%%%|
- |X  x.  OOOOOOOOOOOOO|    | .oOo:              |    |@@o::oOO@@@@@@@@@@@@|    |XXXxo%%%%%%%%%%%%%%%|
- |XX .o.  OOOOOOOOOOOO|    |  .oOo:             |    |@@Oo::oOO@@@@@@@@@@@|    |XXXXxO%%%%%%%%%%%%%%|
- |XX  .o.  OOOOOOOOOOO|    |  .:oOo:            |    |@@@o:::oOOO@@@@@@@@@|    |XXXXX,O%%%%%%%%%%%%%|
+ |X  x.  OOOOOOOOOOOOO|    |  oOo:              |    |@@o::oOO@@@@@@@@@@@@|    |XXXxo%%%%%%%%%%%%%%%|
+ |XX .x.  OOOOOOOOOOOO|    |  .oOo:             |    |@@Oo::oOO@@@@@@@@@@@|    |XXXXxO%%%%%%%%%%%%%%|
+ |XX  .o.  OOOOOOOOOOO|    |   :oOo:            |    |@@@o:::oOOO@@@@@@@@@|    |XXXXX,O%%%%%%%%%%%%%|
  |XXX  .o.  OOOOOOOOOO|    |   .:OOo:           |    |@@@Oo:::oOOO@@@@@@@@|    |XXXXXx O%%%%%%%%%%%%|
- |XXXX .xo.   OOOOOOOO|    |    .oOOo..         |    |@@@@Oo::ooOOOO@@@@@@|    |XXXXXXx O%%%%%%%%%%%|
- |XXXX  .x.. OOOOOOOOO|    |     :oOOo:         |    |@@@@Oo:::ooOOOO@@@@@|    |XXXXXXXx.O%%%%%%%%%%|
- |XXXXX  .x.  O OOOOOO|    |     .:oOO::        |    |@@@@@Oo:::ooOOOO@@@@|    |XXXXXXXXxoO%%%%%%%%%|
- |XXXXX   .x.    OOOOO|    |      ::oOo:.       |    |@@@@@OOo:::ooOOOOO@@|    |XXXXXXXXxxoO%%%%%%%%|
- |XXXXXX  ..o.   OOOOO|    |      .:oOOo::.     |    |@@@@@OOoo:::oooOOOO@|    |&XXXXXXXXx,oO%%%%%%%|
- |XXXXXX   .xo.   OOOO|    |       .:oOOo:..    |    |@@@@@@OOo::::oooOOOO|    |&&XXXXXXXXx,oO%%%%%%|
- |XXXXXXX   .xo.   OOO|    |        .:oOOo:..   |    |@@@@@@OOoo::::oooOOO|    |&XXXXXXXXXXx OO%%%%%|
- |XXXXXXX    .xo.   OO|    |        .::oOOo:.   |    |@@@@@@@OOoo::::oooOO|    |XXXXXXXXXXXxx oO%%%%|
- |XXXXXXXX   ..xo.   O|    |         .:ooOOo:.  |    |@@@@@@@OOOoo::::oooO|    |X&XXXXXXXXXXxx.OO%%%|
- |XXXXXXXXX   ..x..   |    |         ..:oOOoo:..|    |@@@@@@@@OOoo:::::ooo|    |X&XXXXXXXXXXXxxoOO%%|
- |XXXXXXXXXX   ..o..  |    |          ..:ooOoo:.|    |@@@@@@@@OOOoo:::::oo|    |&&XXXXXXXXXXXXx,oOO%|
- |XXXXXXXXXX    .xo.. |    |            ::oOOoo:|    |@@@@@@@@@OOooo:::::o|    |&X&XXXXXXXXXXXxx,oOO|
+ |XXXX .xo.  OOOOOOOOO|    |    .oOOo:          |    |@@@@Oo:::oOOO@@@@@@@|    |XXXXXXx O%%%%%%%%%%%|
+ |XXXX  .xo   OOOOOOOO|    |     :oOO::         |    |@@@@Oo::::oOOOO@@@@@|    |XXXXXXXx.O%%%%%%%%%%|
+ |XXXXX  .x.    OOOOOO|    |     .:oOO::.       |    |@@@@OOo:::ooOOOO@@@@|    |XXXXXXXXxoO%%%%%%%%%|
+ |XXXXX   .x.   OOOOOO|    |      .:oOo::       |    |@@@@@Ooo:::ooOOOOO@@|    |&XXXXXXXxxoO%%%%%%%%|
+ |XXXXXX  ..o.   OOOOO|    |      .:ooOo:.      |    |@@@@@OOoo:::ooOOOOO@|    |&XXXXXXXXx,oO%%%%%%%|
+ |XXXXXXX  .xo.   OOOO|    |       .:oOOo:.     |    |@@@@@@OOo::::oooOOOO|    |&XXXXXXXXXx oO%%%%%%|
+ |XXXXXXX   .xo.   OOO|    |        .:oOOo:.    |    |@@@@@@OOoo::::oooOOO|    |X&XXXXXXXXXx oO%%%%%|
+ |XXXXXXXX   .xo.   OO|    |         ::oOOo:.   |    |@@@@@@@OOoo::::oooOO|    |XXXXXXXXXXXxx oO%%%%|
+ |XXXXXXXXX  ..xo.   O|    |         .:ooOOo:.  |    |@@@@@@@OOOoo::::oooO|    |XXXXXXXXXXXXxx.OO%%%|
+ |XXXXXXXXX   ..xo.   |    |          .:ooOOo:. |    |@@@@@@@@OOoo:::::ooo|    |X&XXXXXXXXXXXxxoOO%%|
+ |XXXXXXXXXX   .xo..  |    |           .:ooOoo:.|    |@@@@@@@@OOOoo:::::oo|    |X&XXXXXXXXXXXXx,oOO%|
+ |XXXXXXXXXX    .xo.. |    |           .::oOOoo:|    |@@@@@@@@@OOooo:::::o|    |&X&XXXXXXXXXXXxx,oOO|
 
 lessVar    x3
- |o   OOOOOOOOOOOOOOOO|    |o:                  |    |:oO@@@@@@@@@@@@@@@@@|    | .oooooooooooooooooo|
- |..   OOOOOOOOOOOOOOO|    |oo:.                |    |:.:oOO@@@@@@@@@@@@@@|    | ooooooooooooooooooo|
- | x.   OOOOOOOOOOOOOO|    |:o::.               |    |o...:ooOO@@@@@@@@@@@|    |..oooooooooooooooooo|
- | .o.   OOOOOOOOOOOOO|    |::::..              |    |O.  .::ooOOOO@@@@@@@|    |oooooooooooooooooooo|
- | .xo.   OOOOOOOOOOOO|    |.::::.              |    |O:   ..::oooOOOO@@@@|    |oooooooooooooooooooo|
- |X .xo.   OOOOOOOOOOO|    | ::::...            |    |@o.   ..:::oooOOOOO@|    |oooooooooooooooooooo|
- |X  .x..    OOOOOOOOO|    | .::::..            |    |@o.    ...::oooooOOO|    |oooooooooooooooooooo|
- |X  .xo..    OOOOOOOO|    | ..::::..           |    |@O:.    ...:::oooooO|    |oooooooooooooooooooo|
- |XX  .xo..    OOOOOOO|    |   .:::...          |    |@Oo.      ...:::oooo|    |oooooooooooooooooooo|
- |XX  ..xo..   OO OOOO|    |   .:::....         |    |@Oo:.      ...::::oo|    |oooooooooooooooooooo|
- |XXX  .xoo.     OOOOO|    |   ...::....        |    |@@o:.       ...:::::|    |oooooooooooooooooooo|
- |XXX  ..xo..     OOOO|    |    ..:.:...        |    |@@O::.       ....:::|    |oooooooooooooooooooo|
- |XXX   .xxo..     OOO|    |    ...:.....       |    |@@Oo:.        ....::|    |oooooooooooooooooooo|
- |XXXX   .xxo..     OO|    |     .........      |    |@@Oo:..        .....|    |oooooooooooooooooooo|
- |XXXX   ..xoo..      |    |      ........      |    |@@Ooo:.         ....|    |oooooooooooooooooooo|
- |XXXX    ..xo...     |    |      .........     |    |@@@Oo:..          ..|    |oooooooooooooooooooo|
- |XXXXXX   .xxo..     |    |       .........    |    |@@@Oo:..           .|    |oooooooooooooooooooo|
+ |o   OOOOOOOOOOOOOOOO|    |o:.                 |    |:oO@@@@@@@@@@@@@@@@@|    | .oooooooooooooooooo|
+ |..   OOOOOOOOOOOOOOO|    |oo:.                |    |:.:oOO@@@@@@@@@@@@@@|    |..oooooooooooooooooo|
+ | x.    OOOOOOOOOOOOO|    |:o::.               |    |o...:ooOO@@@@@@@@@@@|    |..oooooooooooooooooo|
+ | .o.    OOOOOOOOOOOO|    |::::..              |    |O.  .::ooOOOO@@@@@@@|    |oooooooooooooooooooo|
+ |  xo.    OOOOOOOOOOO|    |.::::..             |    |@:   ..::oooOOOO@@@@|    |oooooooooooooooooooo|
+ |  .xo.    OOOOOOOOOO|    | .::::..            |    |@o.   ..:::oooOOOOO@|    |oooooooooooooooooooo|
+ |X  .x..    OOOOOOOOO|    | .::::..            |    |@o.    ...::ooooOOOO|    |oooooooooooooooooooo|
+ |X  .xo..    OOOOOOOO|    |  .::::..           |    |@O:.     ..:::oooooO|    |oooooooooooooooooooo|
+ |X   .xo..     OOOOOO|    |  ..:::...          |    |@Oo.      ...:::oooo|    |oooooooooooooooooooo|
+ |XX  ..xo..    OOOOOO|    |   ..:::...         |    |@Oo:.      ...::::oo|    |oooooooooooooooooooo|
+ |XX   .xo..      OOOO|    |    .:::...         |    |@@o:.       ...:::::|    |oooooooooooooooooooo|
+ |XXX   .xo..     OOOO|    |    ...:....        |    |@@Oo..       ....:::|    |oooooooooooooooooooo|
+ |XXX   ..xo..     OOO|    |     ..:.....       |    |@@Oo:.        ....::|    |oooooooooooooooooooo|
+ |XXX    .xxo..     OO|    |     .........      |    |@@Oo:..         ....|    |oooooooooooooooooooo|
+ |XXXX   ..xoo..     O|    |      ........      |    |@@Oo::.          ...|    |oooooooooooooooooooo|
+ |XXXX    ..xo..     O|    |       ........     |    |@@@Oo:..          ..|    |oooooooooooooooooooo|
+ |XXXXX    .xxo..     |    |       .........    |    |@@@Oo::.           .|    |oooooooooooooooooooo|
  |XXXXX    ..xoo..    |    |        ........    |    |@@@Ooo:..           |    |oooooooooooooooooooo|
- |XXXXX     ..xoo..   |    |         ........   |    |@@@Ooo:..           |    |oooooooooooooooooooo|
+ |XXXXXX    ..xoo..   |    |        .........   |    |@@@Ooo:..           |    |oooooooooooooooooooo|
  |XXXXXX    ..xxo...  |    |         .........  |    |@@@OOo::..          |    |oooooooooooooooooooo|
 
 maxBag     x3
- |oOOOOOOOOOOOOOOOOOOO|    |O                   |    |:oO@@@@@@@@@@@@@@@@@|    |xooo.....           |
- |...OOOOOOOOOOOOOOOOO|    |Ooo                 |    |o::oOO@@@@@@@@@@@@@@|    |x,Xoooo...........  |
- |X.o. OOOOOOOOOOOOOOO|    | oOo:               |    |O::::ooOOO@@@@@@@@@@|    |xxxxxoooooo.........|
- |X xo.  OOOOOOOOOOOOO|    | :Ooo:.             |    |@o:.::oooOOOO@@@@@@@|    |,xx,x .oooooooo.....|
- |XX .x.. OOOOOOOOOOOO|    |  :oooo.            |    |@O::.:::ooooOOOOO@@@|    |,xxxx ,oooooooooooo.|
- |XX .xoo   OOOOOOOOOO|    |  .oOoo::.          |    |@Oo::.::::ooooOOOOOO|    |,xxxx,x. ooooooooooo|
- |XXX .xx..  OOOOOOOOO|    |   .ooooo:.         |    |@@oo::..::::ooooOOOO|    |,xxxxxx, ooooooooooo|
- |XXXX .xoo.   OOOOOOO|    |    :oooo::.        |    |@@Oo::...::::ooooooO|    |,,xxxxx,x. ooooooooo|
- |XXXX  .xx..   OOOOOO|    |     :ooooo::.      |    |@@Ooo::...:::::ooooo|    |,,xxxxxxx  ooooooooo|
- |XXXXX ..xoo..   OOOO|    |     .oooooo::.     |    |@@OOo:::...::::::ooo|    | ,xxxxxxx,x  ooooooo|
- |XXXXXX  .xx..     OO|    |      .:ooooo::..   |    |@@@Ooo:::...::::::oo|    | ,xxxxxxxxx  ..ooooo|
- |XXXXXX  ..xoo..    O|    |      .:ooooooo:.   |    |@@@Ooo::::....::::::|    | ,xxxxxxxxx,,  ooooo|
- |XXXXXXXX ..xx...    |    |        ::ooooo::.. |    |@@@OOoo::::....:::::|    | ,,xxxxxxxxxx  ..ooo|
- |XXXXXXX   ..xoo..   |    |        .:ooooooo:: |    |@@@@Oooo:::.....::::|    | ,,xxxxxxxxxx,,  ooo|
- |XXXXXXXX   ..xx...  |    |         .:oooooo:::|    |@@@@OOoo::::.....:::|    | ,,xxxxxxxxxxxx ,..o|
- |XXXXXXXXX  ..xxoo.. |    |         .::ooooooo:|    |@@@@OOooo::::......:|    | ,,,xxxxxxxxxxx,,  o|
- |XXXXXXXXXX   ..xoo..|    |           .:oooooo:|    |@@@@OOOoo:::::......|    | ,,,xxxxxxxxxxxxx, .|
+ |xOOOOOOOOOOOOOOOOOOO|    |O                   |    |:oO@@@@@@@@@@@@@@@@@|    |xooo....            |
+ |...OOOOOOOOOOOOOOOOO|    |Ooo                 |    |o::oOO@@@@@@@@@@@@@@|    |x,Xoooo..........   |
+ |X.o. OOOOOOOOOOOOOOO|    | oOo:               |    |O::::ooOOO@@@@@@@@@@|    |xxx,xooooooo........|
+ |X xo.  OOOOOOOOOOOOO|    | :Ooo:.             |    |@o:.::oooOOOO@@@@@@@|    |xxx,x. ooooooooo....|
+ |XX .o..  OOOOOOOOOOO|    |  :oooo.            |    |@O::.:::ooooOOOOO@@@|    |,xxxx ,ooooooooooooo|
+ |XX .xo.   OOOOOOOOOO|    |  .oOoo::           |    |@Oo::.::::ooooOOOOOO|    |,xxxx,x .ooooooooooo|
+ |XXX .xo..   OOOOOOOO|    |   .ooooo:.         |    |@@oo::..::::ooooOOOO|    |,xxxxxx ,ooooooooooo|
+ |XXX  .xoo.   OOOOOOO|    |    :ooooo:..       |    |@@Oo::...::::ooooooO|    |,xxxxxx,x  ooooooooo|
+ |XXXX  .xo..    OOOOO|    |     :ooooo::       |    |@@Ooo::...:::::ooooo|    | ,xxxxxxx  ooooooooo|
+ |XXXXX ..xoo..   OOOO|    |     .oooooo:..     |    |@@OOo:::...::::::ooo|    | ,xxxxxxx,x  ooooooo|
+ |XXXXXX  .xo..    OOO|    |      .:ooooo::..   |    |@@@Ooo:::...::::::oo|    | ,xxxxxxxxx ,.oooooo|
+ |XXXXXX  ..xoo..    O|    |      .:ooooooo::   |    |@@@Ooo::::....::::::|    | ,xxxxxxxxx,,  ooooo|
+ |XXXXXXX  ..xo..     |    |       .::ooooo::.. |    |@@@OOoo::::....:::::|    | ,,xxxxxxxxxx ,..ooo|
+ |XXXXXXX   .xxoo..   |    |        .:ooooooo::.|    |@@@@Oooo:::.....::::|    | ,,xxxxxxxxxx,,  ooo|
+ |XXXXXXXX   ..xo...  |    |         .:oooooo:::|    |@@@@OOoo::::.....:::|    | ,,xxxxxxxxxxxx ,..o|
+ |XXXXXXXXX   .xxoo.. |    |         .::ooooooo:|    |@@@@OOooo::::......:|    | ,,xxxxxxxxxxxx,,  o|
+ |XXXXXXXXXX   ..xoo..|    |           ::oooooo:|    |@@@@OOOoo:::::......|    | ,,,xxxxxxxxxxxxx  .|
  |XXXXXXXXXX   ..xxoo.|    |           .::oooooo|    |@@@@@OOooo:::::.....|    |  ,,xxxxxxxxxxxxx,, |
- |XXXXXXXXXXXX   ..xoo|    |            .::ooooo|    |@@@@@OOoooo::::.....|    |  ,,xxxxxxxxxxxxxxx |
- |XXXXXXXXXXX    ..xxo|    |             :::oooo|    |@@@@@OOOooo:::::....|    |  ,,,xxxxxxxxxxxxxx,|
+ |XXXXXXXXXXX    ..xxo|    |            .::ooooo|    |@@@@@OOoooo::::.....|    |  ,,xxxxxxxxxxxxxxx,|
+ |XXXXXXXXXXX    ..xxo|    |            ..:ooooo|    |@@@@@OOOooo:::::....|    |  ,,xxxxxxxxxxxxxxx,|
 
 annihilate x3
  |OOOOOOOOOOOOOOOOOOOO|    |                    |    | :O@@@@@@@@@@@@@@@@@|    |                    |
