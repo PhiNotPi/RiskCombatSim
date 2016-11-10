@@ -10,7 +10,7 @@ public abstract class CombatSystem {
     WarAvg[][] res = new WarAvg[atk][def];
     for (int a = 0; a < atk; a++) {
       for (int d = 0; d < def; d++) {
-        res[a][d] = battle(1000, pscale * (a + 1), pscale * (d + 1));
+        res[a][d] = battle(10000, pscale * (a + 1), pscale * (d + 1));
         // res[a][d] = battle(10000, (int) Math.pow(a + 1, 2),
         // (int) Math.pow(d + 1, 2)).atkWin;
       }
