@@ -9,27 +9,24 @@ public class Sim {
     CombatSystem r2 = new ExtendedRisk();
     CombatSystem r3 = new StableRisk();
     CombatSystem r4 = new MaxBag();
-
+    CombatSystem r5 = new Annihilate();
+    System.out.println("Samples:");
     System.out.println(r1.battle(100000, 10, 10));
     System.out.println(r2.battle(100000, 10, 10));
     System.out.println(r3.battle(100000, 10, 10));
     System.out.println(r4.battle(100000, 10, 10));
+    System.out.println(r5.battle(100000, 11, 10));
+    WarAvg.printDesc();
     r1.calcGrid(20, 20);
-    // r1.printGrid();
-    r1.printAtkWin();
-    r1.printStdDevRatio();
+    r1.printEverything();
     r2.calcGrid(20, 20);
-    // r2.printGrid();
-    r2.printAtkWin();
-    r2.printStdDevRatio();
+    r2.printEverything();
     r3.calcGrid(20, 20);
-    // r3.printGrid();
-    r3.printAtkWin();
-    r3.printStdDevRatio();
+    r3.printEverything();
     r4.calcGrid(20, 20);
-    // r4.printGrid();
-    r4.printAtkWin();
-    r4.printStdDevRatio();
+    r4.printEverything();
+    r5.calcGrid(20, 20);
+    r5.printEverything();
   }
 
   static void sort(int[] arr, boolean rev) {
